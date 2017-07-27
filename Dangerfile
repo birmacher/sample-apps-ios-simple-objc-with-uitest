@@ -12,6 +12,6 @@ warn("Big PR") if git.lines_of_code > 500
 fail("fdescribe left in tests") if `grep -r fdescribe specs/ `.length > 1
 fail("fit left in tests") if `grep -r fit specs/ `.length > 1
 
-# Fail if release notes are not updated
-release_notes_updated = git.modified_files.include? "release_notes.txt"
-fail "You forgot to update your release notes file" if !declared_trivial && !release_notes_updated
+# Public install page
+public_install_page_url = ENV['BITRISE_PUBLIC_INSTALL_PAGE_URL']
+message("📱 New app deployed to Bitrise: "#{public_install_page_url}" if public_install_page_url
