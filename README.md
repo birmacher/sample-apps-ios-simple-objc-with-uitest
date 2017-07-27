@@ -1,5 +1,7 @@
-Fork of the Bitrise sample iOS app
+Bitrise sample iOS app
 ===========================
+
+some changes
 
 This is a simple, Objective-C based iOS app project
 you can use for testing Bitrise's app validation process
