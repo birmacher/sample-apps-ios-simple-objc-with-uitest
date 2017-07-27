@@ -14,4 +14,4 @@ fail("fit left in tests") if `grep -r fit specs/ `.length > 1
 
 # Public install page
 public_install_page_url = ENV['BITRISE_PUBLIC_INSTALL_PAGE_URL']
-message("📱 New app deployed to Bitrise: #{public_install_page_url}") if public_install_page_url
+message("📱 New app deployed to Bitrise: #{github.html_link(public_install_page_url)}") if public_install_page_url
